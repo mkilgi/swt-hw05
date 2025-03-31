@@ -16,20 +16,24 @@ public class MTv1 {
 	/*
 	 * Test method for 'ee.ut.cs.swt.nextdate.NextDate.run(int, int, int)'
 	 */
-	
+
+	// T1
 	@Test
 	public final void testJuneToJuly(){
 	assertEquals("7/1/2001", trialDate.run(6, 30, 2001));
 	}
-	
+
+	// T2
 	@Test
 	public final void testMarchToApril(){
 	assertEquals("4/1/2001", trialDate.run(3, 31, 2001));
 	}
 
+	// T3
 	@Test
 	public final void testDecemberToJanuary(){ assertEquals("Invalid Next Year", trialDate.run(12, 31, 2021)); }
 
+	// T4
 	@Test
 	public final void testLeapYear(){
 		assertEquals("2/29/2004", trialDate.run(2, 28, 2004));
